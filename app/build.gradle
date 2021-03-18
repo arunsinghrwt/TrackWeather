@@ -5,6 +5,13 @@ plugins {
     id 'kotlin-android-extensions'
 }
 
+
+repositories{
+    google()
+    jcenter()
+    mavenCentral()
+}
+
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
