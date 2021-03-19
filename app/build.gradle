@@ -9,13 +9,12 @@ plugins {
 repositories{
     google()
     jcenter()
-    mavenCentral()
+
 }
 
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
-
     defaultConfig {
         applicationId "com.arun.trackweather"
         minSdkVersion 19
@@ -85,6 +84,9 @@ dependencies {
     //coroutines
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.0'
 
+    //gifView
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    kapt 'com.github.bumptech.glide:compiler:4.11.0'
 
 
 

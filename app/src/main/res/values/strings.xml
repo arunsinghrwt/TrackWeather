@@ -2,4 +2,9 @@
     <string name="app_name">Track Weather</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="four_days">Next 4-day weather Report</string>
+    <string name="weather_detail">Weather Details</string>
+
+
 </resources>

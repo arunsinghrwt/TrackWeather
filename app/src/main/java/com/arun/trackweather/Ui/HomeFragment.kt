@@ -1,11 +1,20 @@
 package com.arun.trackweather.Ui
 
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.arun.trackweather.R
+import com.arun.trackweather.Utility.GlideApp
+import com.bumptech.glide.load.engine.DiskCacheStrategy
+import com.bumptech.glide.load.resource.bitmap.CenterCrop
+import com.bumptech.glide.load.resource.bitmap.FitCenter
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
+import kotlinx.android.synthetic.main.fragment_home.*
+import kotlinx.android.synthetic.main.fragment_home.view.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -21,6 +30,7 @@ class HomeFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+    lateinit var mView: View
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,7 +45,27 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
+        mView =  inflater.inflate(R.layout.fragment_home, container, false)
+        initView()
+        return mView
+    }
+
+    private fun initView() {
+        val url = "https://i.pinimg.com/originals/78/7c/b4/787cb463a2395515f1e8e4f62a5886d8.gif"
+        val glide = GlideApp.with(this)
+        glide.load(url)
+            .placeholder(ColorDrawable(Color.GRAY))
+            .error(ColorDrawable(Color.GRAY))
+            .thumbnail(glide.load(url).override(300).transform(CenterCrop()))
+            .transform(CenterCrop())
+            .transition(DrawableTransitionOptions.withCrossFade())
+            .diskCacheStrategy(DiskCacheStrategy.ALL)
+            .into(mView.myView)
+
+
+
+
+
     }
 
     companion object {
