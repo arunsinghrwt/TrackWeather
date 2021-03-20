@@ -14,15 +14,15 @@ import java.util.ArrayList
  */
 class DailyAdapterList(var itemList: ArrayList<Int> ,var context: Context) : RecyclerView.Adapter<DailyAdapterList.ViewHolder> (){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DailyAdapterList.ViewHolder {
-        TODO("Not yet implemented")
+
     }
 
     override fun onBindViewHolder(holder: DailyAdapterList.ViewHolder, position: Int) {
-        TODO("Not yet implemented")
+
     }
 
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+
     }
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
 }
