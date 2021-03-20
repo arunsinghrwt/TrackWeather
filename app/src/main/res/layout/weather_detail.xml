@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
    android:paddingLeft="30dp"
     android:paddingRight="30dp"
-    android:paddingTop="12dp"
+    android:paddingTop="15dp"
     android:background="@color/new_bg"
     android:layout_height="match_parent">
 
@@ -44,7 +44,7 @@
                     android:layout_width = "wrap_content"
                     android:layout_height = "wrap_content"
                     android:text="Apparent temperature"
-                    android:layout_marginTop="8dp"
+                    android:paddingTop="2dp"
                     android:fontFamily="@font/quicksand_light"
                     android:textColor = "@color/grey"
                     android:textSize = "14dp"
@@ -81,7 +81,7 @@
                     android:layout_width = "wrap_content"
                     android:layout_height = "wrap_content"
                     android:text="Visibility"
-                    android:layout_marginTop="8dp"
+                    android:paddingTop="2dp"
                     android:fontFamily="@font/quicksand_light"
                     android:textColor = "@color/grey"
                     android:textSize = "14dp"
@@ -97,7 +97,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="horizontal"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="15dp"
             android:layout_height="wrap_content">
             <LinearLayout
                 android:id = "@+id/air_pre"
@@ -123,7 +123,7 @@
                     android:layout_width = "wrap_content"
                     android:layout_height = "wrap_content"
                     android:text="Air pressure"
-                    android:layout_marginTop="8dp"
+                    android:paddingTop="2dp"
                     android:fontFamily="@font/quicksand_light"
                     android:textColor = "@color/grey"
                     android:textSize = "14dp"
@@ -159,7 +159,7 @@
                     android:layout_width = "wrap_content"
                     android:layout_height = "wrap_content"
                     android:text="uv"
-                    android:layout_marginTop="8dp"
+                    android:paddingTop="2dp"
                     android:fontFamily="@font/quicksand_light"
                     android:textColor = "@color/grey"
                     android:textSize = "14dp"
@@ -173,7 +173,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="horizontal"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="15dp"
             android:layout_height="wrap_content">
             <LinearLayout
                 android:id = "@+id/humidity"
@@ -199,7 +199,7 @@
                     android:layout_width = "wrap_content"
                     android:layout_height = "wrap_content"
                     android:text="Humidity"
-                    android:layout_marginTop="8dp"
+                    android:paddingTop="2dp"
                     android:fontFamily="@font/quicksand_light"
                     android:textColor = "@color/grey"
                     android:textSize = "14dp"
@@ -237,7 +237,7 @@
                     android:layout_width = "wrap_content"
                     android:layout_height = "wrap_content"
                     android:text="NE wind"
-                    android:layout_marginTop="8dp"
+                    android:paddingTop="2dp"
                     android:fontFamily="@font/quicksand_light"
                     android:textColor = "@color/white"
                     android:textSize = "14dp"

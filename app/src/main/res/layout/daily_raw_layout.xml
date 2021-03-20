@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:padding="10dp"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+     <TextView
+         android:id="@+id/date"
+         android:layout_weight="1"
+         android:layout_width="wrap_content"
+         android:text="Mar 20"
+         android:textAlignment="textStart"
+         android:textSize="14sp"
+         android:fontFamily="@font/quicksand_regular"
+         android:textColor="@color/grey"
+         android:layout_height="match_parent">
+
+     </TextView>
+    <TextView
+        android:id="@+id/day"
+        android:layout_weight="1"
+        android:text="Today"
+        android:textAlignment="viewStart"
+        android:textSize="14sp"
+        android:fontFamily="@font/quicksand_regular"
+        android:textColor="@color/grey"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+    </TextView>
+    <ImageView
+        android:layout_weight="1"
+        android:id="@+id/weather_icon2"
+        android:src="@drawable/ic_outline_wb_sunny_24"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+    </ImageView>
+    <TextView
+
+        android:id="@+id/weather_type2"
+        android:layout_weight="1"
+        android:text="Mostly Sunny"
+        android:textAlignment="viewStart"
+        android:textSize="14sp"
+        android:fontFamily="@font/quicksand_regular"
+        android:textColor="@color/grey"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+    </TextView>
+    <TextView
+        android:id="@+id/temp2"
+        android:layout_weight="1"
+        android:text="33/21\u2103"
+        android:textAlignment="viewStart"
+        android:textSize="14sp"
+        android:fontFamily="@font/quicksand_regular"
+        android:textColor="@color/grey"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+    </TextView>
+
+</LinearLayout>

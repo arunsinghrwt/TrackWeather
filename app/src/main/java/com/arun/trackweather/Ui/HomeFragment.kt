@@ -51,6 +51,13 @@ class HomeFragment : Fragment() {
     }
 
     private fun initView() {
+        backgroundImage()
+
+
+
+    }
+
+    private fun backgroundImage() {
         val url = "https://i.pinimg.com/originals/78/7c/b4/787cb463a2395515f1e8e4f62a5886d8.gif"
         val glide = GlideApp.with(this)
         glide.load(url)
@@ -61,10 +68,6 @@ class HomeFragment : Fragment() {
             .transition(DrawableTransitionOptions.withCrossFade())
             .diskCacheStrategy(DiskCacheStrategy.ALL)
             .into(mView.myView)
-
-
-
-
 
     }
 

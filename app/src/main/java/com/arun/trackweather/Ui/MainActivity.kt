@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initView() {
 
-                var fm = supportFragmentManager.beginTransaction()
+        var fm = supportFragmentManager.beginTransaction()
                 fm.replace(R.id.container , HomeFragment.newInstance("",""))
                     .commit()
 
