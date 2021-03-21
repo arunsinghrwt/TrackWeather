@@ -5,47 +5,46 @@ import java.util.*
 import kotlin.collections.ArrayList
 
 class DailyList : Serializable {
-    var dt : Date? = null
-    var sunrise : Date? = null
-    var sunset : Date? = null
+    var dt : Int = 0
+    var sunrise : Int = 0
+    var sunset : Int = 0
     var temp = DailyTemp()
     var feels_like  = DailyFeelsLike()
-    var pressure : Int? = null
-    var humidity : Int? = null
-    var dew_point : Float? = null
-    var uvi : Int? = null
-    var clouds : Int? = null
-    var wind_speed : Float? = null
-    var wind_deg : Int? = null
-    var pop : Int? = 0
-    var rain : Float?  =0F
-    var weather  = ArrayList<DailyWeather>()
+    var pressure : Int = 0
+    var humidity : Int = 0
+    var dew_point : Double = 0.0
+    var uvi : Double = 0.0
+    var clouds  : Int = 0
+    var wind_speed : Double = 0.0
+    var wind_deg : Int = 0
+    var pop  : Double = 0.0
+    var weather  : ArrayList<DailyWeather> ?= null
 
 
 }
 
 class DailyFeelsLike {
-    var day : Float? = null
-    var night : Float? = null
-    var eve : Float? = null
-    var morn : Float? = null
+    var day : Double = 0.0
+    var night : Double = 0.0
+    var eve: Double = 0.0
+    var morn : Double = 0.0
 }
 
 class DailyTemp : Serializable {
-    var day : Float? = null
-    var min : Float? = null
-    var max : Float? = null
-    var night : Float? = null
-    var eve : Float? = null
-    var morn : Float? = null
+    var day : Double = 0.0
+    var min : Double = 0.0
+    var max : Double = 0.0
+    var night : Double = 0.0
+    var eve : Double = 0.0
+    var morn : Double = 0.0
 
 }
 
 
 class DailyWeather : Serializable {
-    var id : Int? = null
-    var main : String? = null
-    var description : String? = null
-    var icon : String? = null
+    var id : Int = 0
+    var main : String= ""
+    var description : String = ""
+    var icon : String = ""
 
 }

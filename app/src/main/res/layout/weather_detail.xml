@@ -21,7 +21,7 @@
             android:layout_height="wrap_content">
 
             <LinearLayout
-                android:id = "@+id/app_temp"
+
                 android:layout_width = "match_parent"
                 android:layout_height = "wrap_content"
                 android:layout_weight = "1"
@@ -32,11 +32,12 @@
                 >
 
                 <TextView
+                    android:id = "@+id/app_temp"
                     android:layout_width = "wrap_content"
                     android:layout_height = "wrap_content"
-                    android:text="31\u2103"
+
                     android:fontFamily="@font/quicksand_semibold"
-                    android:textSize="16dp"
+                    android:textSize="16sp"
                     android:textColor = "@color/white"
                     >
                 </TextView>
@@ -55,7 +56,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id = "@+id/visibility"
+
                 android:layout_width = "match_parent"
                 android:layout_marginLeft="10dp"
                 android:layout_height = "wrap_content"
@@ -67,11 +68,12 @@
                 >
 
                 <TextView
+                    android:id = "@+id/visibility_n"
                     android:layout_width = "wrap_content"
                     android:layout_height = "wrap_content"
-                    android:text="4 km"
+
                     android:fontFamily="@font/quicksand_semibold"
-                    android:textSize="18dp"
+                    android:textSize="18sp"
                     android:textColor = "@color/white"
 
 
@@ -84,7 +86,7 @@
                     android:paddingTop="2dp"
                     android:fontFamily="@font/quicksand_light"
                     android:textColor = "@color/grey"
-                    android:textSize = "14dp"
+                    android:textSize = "14sp"
 
                     >
                 </TextView>
@@ -100,7 +102,6 @@
             android:layout_marginTop="15dp"
             android:layout_height="wrap_content">
             <LinearLayout
-                android:id = "@+id/air_pre"
                 android:layout_width = "match_parent"
                 android:layout_height = "wrap_content"
                 android:layout_weight = "1"
@@ -111,11 +112,12 @@
                 >
 
                 <TextView
+                    android:id="@+id/air_pre"
                     android:layout_width = "wrap_content"
                     android:layout_height = "wrap_content"
-                    android:text="1008 hPa"
+
                     android:fontFamily="@font/quicksand_semibold"
-                    android:textSize="16dp"
+                    android:textSize="16sp"
                     android:textColor = "@color/white"
                     >
                 </TextView>
@@ -134,7 +136,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id = "@+id/uv"
+
                 android:layout_width = "match_parent"
                 android:layout_height = "wrap_content"
                 android:padding="10dp"
@@ -145,11 +147,11 @@
                 >
 
                 <TextView
+                    android:id = "@+id/uv"
                     android:layout_width = "wrap_content"
                     android:layout_height = "wrap_content"
-                    android:text="Strong"
                     android:fontFamily="@font/quicksand_semibold"
-                    android:textSize="18dp"
+                    android:textSize="18sp"
                     android:textColor = "@color/white"
 
 
@@ -176,7 +178,7 @@
             android:layout_marginTop="15dp"
             android:layout_height="wrap_content">
             <LinearLayout
-                android:id = "@+id/humidity"
+
                 android:layout_width = "match_parent"
                 android:layout_height = "wrap_content"
                 android:layout_weight = "1"
@@ -187,11 +189,12 @@
                 >
 
                 <TextView
+                    android:id = "@+id/humidity"
                     android:layout_width = "wrap_content"
                     android:layout_height = "wrap_content"
-                    android:text="31\u2103"
+
                     android:fontFamily="@font/quicksand_semibold"
-                    android:textSize="16dp"
+                    android:textSize="16sp"
                     android:textColor = "@color/white"
                     >
                 </TextView>
@@ -210,7 +213,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id = "@+id/apply_loan"
+
                 android:layout_width = "match_parent"
                 android:layout_height = "wrap_content"
                 android:layout_weight = "1"
@@ -221,12 +224,12 @@
                 >
 
                 <TextView
+                    android:id="@+id/wind"
                     android:layout_width = "wrap_content"
                     android:layout_height = "wrap_content"
-                    android:text="8 km/h"
 
                     android:fontFamily="@font/quicksand_semibold"
-                    android:textSize="16dp"
+                    android:textSize="16sp"
 
                     android:textColor = "@color/white"
 

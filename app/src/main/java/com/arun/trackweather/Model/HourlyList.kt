@@ -6,21 +6,20 @@ import kotlin.collections.ArrayList
 
 class HourlyList : Serializable {
 
-    var dt : Date? = null
-    var sunrise : Date? = null
-    var sunset : Date? = null
-    var temp : Float? = null
-    var feels_like : Float? = null
-    var pressure : Int? = null
-    var humidity : Int? = null
-    var dew_point : Float? = null
-    var uvi : Int? = null
-    var clouds : Int? = null
-    var visibility : Int? = null
-    var wind_speed : Float? = null
-    var wind_deg : Int? = null
-    var pop : Int? = 0
-
+    var dt : Int = 0
+    var sunrise : Int = 0
+    var sunset : Int = 0
+    var temp : Double = 0.0
+    var feels_like : Double = 0.0
+    var pressure : Int = 0
+    var humidity : Int = 0
+    var dew_point : Double = 0.0
+    var uvi: Double = 0.0
+    var clouds : Int = 0
+    var visibility : Int = 0
+    var wind_speed : Double = 0.0
+    var wind_deg : Int = 0
+    var pop : Double = 0.0
     var weather  = ArrayList<HourlyWeather>()
 
 
@@ -30,9 +29,9 @@ class HourlyList : Serializable {
 
 
 class HourlyWeather : Serializable {
-    var id : Int? = null
-    var main : String? = null
-    var description : String? = null
-    var icon : String? = null
+    var id : Int = 0
+    var main : String = ""
+    var description : String = ""
+    var icon : String = ""
 
 }

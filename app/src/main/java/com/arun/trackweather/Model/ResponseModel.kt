@@ -1,6 +1,5 @@
 package com.arun.trackweather.Model
 
-import java.io.Serializable
 
 
 /**
@@ -8,12 +7,12 @@ import java.io.Serializable
  *https://github.com/arunsinghrwt
 
  */
-class ResponseModel : Serializable{
-    var lat : Float = 0F
-    var lon : Float = 0F
+class ResponseModel {
+    var lat : Double = 0.0
+    var lon : Double  = 0.0
     var timezone : String = ""
-    var current  = Current()
-    var hourly = ArrayList<Current>()
-    var daily = ArrayList<DailyList>()
-
+    var timezone_offset : Int = 0
+    var current = Current()
+    var hourly : ArrayList<HourlyList>? = null
+    var daily : ArrayList<DailyList>? = null
 }
