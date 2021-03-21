@@ -10,7 +10,8 @@ import com.arun.trackweather.Model.HourlyList
 import com.arun.trackweather.R
 import kotlinx.android.synthetic.main.daily_raw_layout.view.*
 import kotlinx.android.synthetic.main.hourly_raw_layout.view.*
-import java.util.ArrayList
+import java.text.SimpleDateFormat
+import java.util.*
 
 
 /**
@@ -32,9 +33,27 @@ class HourlyAdapterList(var itemList: ArrayList<HourlyList>, var context: Contex
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = itemList[position]
-        holder.itemView.time.text = item.dt.toString()
+        val sdf = SimpleDateFormat("hh:mm a")
+        val netDate = Date(item.dt.toLong()* 1000)
+        val date =sdf.format(netDate)
+        holder.itemView.time.text = date
         holder.itemView.weather_desc.text = item.weather[0].main
-        holder.itemView.temp.text = item.temp.toString()
+        holder.itemView.temp.text = item.temp.toString()+"\u2103"
+        when(item.weather[0].main){
+
+           "Clouds" ->{
+               holder.itemView.weather_icon.setImageResource(R.drawable.cloudy)
+           }
+            "Clear" ->{
+                holder.itemView.weather_icon.setImageResource(R.drawable.ic_outline_wb_sunny_24)
+            }
+            "Rain" ->{
+                holder.itemView.weather_icon.setImageResource(R.drawable.rain)
+            }
+
+
+
+        }
 
 
 

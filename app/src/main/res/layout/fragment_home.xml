@@ -40,7 +40,7 @@
                 android:id="@+id/location"
                 android:layout_width="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="Jaipur"
+                android:text=""
                 android:textColor="@color/white"
                 android:fontFamily="@font/quicksand_semibold"
                 android:textSize="18dp"
@@ -85,7 +85,6 @@
                     android:id="@+id/weather_type"
                     android:layout_weight="1"
                     android:layout_width="wrap_content"
-
                     android:layout_gravity="center_vertical"
                     android:textColor="@color/white"
                     android:textSize="22sp"

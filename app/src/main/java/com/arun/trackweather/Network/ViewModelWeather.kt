@@ -5,6 +5,8 @@ import androidx.lifecycle.LiveDataReactiveStreams
 import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.ViewModel
 import com.arun.trackweather.Model.ResponseModel
+import com.arun.trackweather.Utility.Constants
+import com.fxn.stash.Stash
 import com.google.gson.GsonBuilder
 import io.reactivex.rxjava3.schedulers.Schedulers
 
@@ -19,10 +21,11 @@ import io.reactivex.rxjava3.schedulers.Schedulers
 class ViewModelWeather(var apiInterface: ApiInterface) : ViewModel() {
 
     var mediatorList = MediatorLiveData<ResponseModel>()
-    fun getWeatherDetailList(){
-
+    fun getWeatherDetailList() {
+        Log.e("lat","-->>."+Stash.getString(Constants.LAT)+Stash.getString(Constants.LNG))
         var list = LiveDataReactiveStreams.fromPublisher(
-            apiInterface.fetchDetails("26.835251","75.824341","metric","minutely","062017fedd4d2aea77a59490174aa31e")!!.onErrorReturn {
+
+            apiInterface.fetchDetails(Stash.getString(Constants.LAT),Stash.getString(Constants.LNG),"metric","minutely","062017fedd4d2aea77a59490174aa31e")!!.onErrorReturn {
               ResponseModel().apply {
                   Log.e("error","--->>"+it.cause + it.message)
               }

@@ -4,6 +4,7 @@ import androidx.multidex.MultiDexApplication
 import com.arun.trackweather.Network.ApiInterface
 import com.arun.trackweather.Network.retrofitModule
 import com.arun.trackweather.Utility.Constants
+import com.fxn.stash.Stash
 import okhttp3.OkHttpClient
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
@@ -24,7 +25,7 @@ class BaseApplication : MultiDexApplication() {
 
     override fun onCreate() {
         super.onCreate()
-
+        Stash.init(applicationContext)
         startKoin {
             androidLogger()
             androidContext(applicationContext)

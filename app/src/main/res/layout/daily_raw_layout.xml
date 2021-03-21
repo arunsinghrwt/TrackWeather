@@ -11,10 +11,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
+            android:layout_width="match_parent"
             android:id="@+id/date1"
             android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:text="Mar 20"
+
+
             android:textAlignment="textStart"
             android:textSize="14sp"
             android:fontFamily="@font/quicksand_regular"
@@ -25,20 +26,20 @@
         <TextView
             android:id="@+id/day1"
             android:layout_weight="1"
-            android:text="Today"
             android:textAlignment="viewStart"
             android:textSize="14sp"
             android:fontFamily="@font/quicksand_regular"
             android:textColor="@color/grey"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent">
 
         </TextView>
         <ImageView
             android:layout_weight="1"
             android:id="@+id/weather_icon1"
-            android:src="@drawable/ic_outline_wb_sunny_24"
-            android:layout_width="wrap_content"
+            android:padding="6dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
             android:layout_height="match_parent">
 
         </ImageView>
@@ -46,24 +47,23 @@
 
             android:id="@+id/weather_type1"
             android:layout_weight="1"
-            android:text="Mostly Sunny"
-            android:textAlignment="viewStart"
+             android:textAlignment="viewStart"
             android:textSize="14sp"
             android:fontFamily="@font/quicksand_regular"
             android:textColor="@color/grey"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent">
 
         </TextView>
         <TextView
             android:id="@+id/temp1"
             android:layout_weight="1"
-            android:text="33/21\u2103"
+
             android:textAlignment="viewStart"
             android:textSize="14sp"
             android:fontFamily="@font/quicksand_regular"
             android:textColor="@color/grey"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent">
 
         </TextView>
@@ -77,8 +77,8 @@
         <TextView
             android:id="@+id/date2"
             android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:text="Mar 20"
+            android:layout_width="match_parent"
+
             android:textAlignment="textStart"
             android:textSize="14sp"
             android:fontFamily="@font/quicksand_regular"
@@ -89,20 +89,19 @@
         <TextView
             android:id="@+id/day2"
             android:layout_weight="1"
-            android:text="Today"
             android:textAlignment="viewStart"
             android:textSize="14sp"
             android:fontFamily="@font/quicksand_regular"
             android:textColor="@color/grey"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent">
 
         </TextView>
         <ImageView
             android:layout_weight="1"
             android:id="@+id/weather_icon2"
-            android:src="@drawable/ic_outline_wb_sunny_24"
-            android:layout_width="wrap_content"
+            android:padding="6dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent">
 
         </ImageView>
@@ -110,24 +109,23 @@
 
             android:id="@+id/weather_type2"
             android:layout_weight="1"
-            android:text="Mostly Sunny"
             android:textAlignment="viewStart"
             android:textSize="14sp"
             android:fontFamily="@font/quicksand_regular"
             android:textColor="@color/grey"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent">
 
         </TextView>
         <TextView
             android:id="@+id/temp2"
             android:layout_weight="1"
-            android:text="33/21\u2103"
+
             android:textAlignment="viewStart"
             android:textSize="14sp"
             android:fontFamily="@font/quicksand_regular"
             android:textColor="@color/grey"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent">
 
         </TextView>
@@ -140,8 +138,8 @@
         <TextView
             android:id="@+id/date3"
             android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:text="Mar 20"
+            android:layout_width="match_parent"
+
             android:textAlignment="textStart"
             android:textSize="14sp"
             android:fontFamily="@font/quicksand_regular"
@@ -152,20 +150,20 @@
         <TextView
             android:id="@+id/day3"
             android:layout_weight="1"
-            android:text="Today"
+
             android:textAlignment="viewStart"
             android:textSize="14sp"
             android:fontFamily="@font/quicksand_regular"
             android:textColor="@color/grey"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent">
 
         </TextView>
         <ImageView
             android:layout_weight="1"
             android:id="@+id/weather_icon3"
-            android:src="@drawable/ic_outline_wb_sunny_24"
-            android:layout_width="wrap_content"
+            android:padding="6dp"
+             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
         </ImageView>
@@ -173,24 +171,24 @@
 
             android:id="@+id/weather_type3"
             android:layout_weight="1"
-            android:text="Mostly Sunny"
+
             android:textAlignment="viewStart"
             android:textSize="14sp"
             android:fontFamily="@font/quicksand_regular"
             android:textColor="@color/grey"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent">
 
         </TextView>
         <TextView
             android:id="@+id/temp3"
             android:layout_weight="1"
-            android:text="33/21\u2103"
+
             android:textAlignment="viewStart"
             android:textSize="14sp"
             android:fontFamily="@font/quicksand_regular"
             android:textColor="@color/grey"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent">
 
         </TextView>
@@ -198,13 +196,13 @@
     <LinearLayout
         android:orientation="horizontal"
         android:padding="10dp"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
             android:id="@+id/date4"
             android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:text="Mar 20"
+            android:layout_width="match_parent"
             android:textAlignment="textStart"
             android:textSize="14sp"
             android:fontFamily="@font/quicksand_regular"
@@ -215,20 +213,19 @@
         <TextView
             android:id="@+id/day4"
             android:layout_weight="1"
-            android:text="Today"
             android:textAlignment="viewStart"
             android:textSize="14sp"
             android:fontFamily="@font/quicksand_regular"
             android:textColor="@color/grey"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent">
 
         </TextView>
         <ImageView
             android:layout_weight="1"
             android:id="@+id/weather_icon4"
-            android:src="@drawable/ic_outline_wb_sunny_24"
-            android:layout_width="wrap_content"
+            android:padding="6dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent">
 
         </ImageView>
@@ -236,24 +233,24 @@
 
             android:id="@+id/weather_type4"
             android:layout_weight="1"
-            android:text="Mostly Sunny"
+
             android:textAlignment="viewStart"
             android:textSize="14sp"
             android:fontFamily="@font/quicksand_regular"
             android:textColor="@color/grey"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent">
 
         </TextView>
         <TextView
             android:id="@+id/temp4"
             android:layout_weight="1"
-            android:text="33/21\u2103"
+
             android:textAlignment="viewStart"
             android:textSize="14sp"
             android:fontFamily="@font/quicksand_regular"
             android:textColor="@color/grey"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent">
 
         </TextView>
