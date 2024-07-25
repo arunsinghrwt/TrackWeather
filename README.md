@@ -17,11 +17,13 @@
 - Displays additional data such as humidity, wind speed, and more.
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-  <img src="screenshots/splash_screen.png" alt="Splash Screen" width="24%">
-  <img src="screenshots/home_page.png" alt="Home Page" width="24%">
-  <img src="screenshots/details_page.png" alt="Details Page" width="24%">
-  <img src="screenshots/app_interface.gif" alt="App Interface" width="24%">
+<img src="home_page.png" alt="Home page" width="24%">
+  <img src="inner_page.png" alt="App Interface" width="24%">
+  <img src="inner_two.png" alt="App Interface" width="24%">
 </div>
+
+
+
 
 ## Features
 
